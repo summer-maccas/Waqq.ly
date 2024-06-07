@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Waqq.ly</title>
+    <style>
+      #toast {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        padding: 20px;
+        z-index: 99999;
+      }
+    </style>
+  </head>
+  <style></style> 
+  <body>
+    <div id="app">
+      <header>
+        <div class="container">
+          <div class="hero is-info is-bold">
+            <div class="hero-body">
+              <h1 class="is-size-1">Welcome to Waqq.ly</h1>
+              <h3>A Cloud-Based Web App that helps dog owners identify dog walkers within their area</h3>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="form">
+          <h2>Register as a Dog Walker</h2>
+          <h4>Tell us more about you</h4>
+          <form id="dogWalkerForm" class="form">
+              <div class="form-group">
+                  <input type="text" id="dogWalkerName" name="dogWalkerName" placeholder="Full Name" required>
+              </div>
+              <div class="form-group">
+                  <input type="text" id="dogWalkerLocation" name="dogWalkerLocation" placeholder="Location" required>
+              </div>
+              <div class="form-group">
+                  <input type="number" id="dogWalkerHourlyRate" name="dogWalkerHourlyRate" placeholder="Hourly Rate" required>
+              </div>
+              <div class="form-group">
+                  <input type="text" id="dogWalkerEmail" name="dogWalkerEmail" placeholder="Email Address" required>
+              </div>
+              <div class="form-group">
+                <input type="number" id="dogWalkerNumber" name="dogWalkerNumber" placeholder="Phone Number" required>
+              </div>
+              <button type="submit" class="btn" id="addWalker">Submit Registration</button>
+              <ol id="list_item"></ol>
+          </form>
+        </section>
+
+        <section class="form">
+          <h2>Register your Dog</h2>
+          <h4>Tell us more about your Dog</h4>
+          <form id="dogForm" class="form">
+              <div class="form-group">
+                  <input type="text" id="dogName" name="dogName" placeholder="Your Dog's Name" required>
+              </div>
+              <div class="form-group">
+                  <input type="text" id="breed" name="breed" placeholder="Your Dog's Breed" required>
+              </div>
+              <div class="form-group">
+                  <input type="text" id="ownerLocation" name="ownerLocation" placeholder="Owner Location" required>
+              </div>
+              <div class="form-group">
+                  <input type="text" id="ownerEmail" name="ownerEmail" placeholder="Owner's Email" required>
+              </div>
+              <div class="form-group">
+                <input type="number" id="ownerNumber" name="ownerNumber" placeholder="Owner's Phone Number" required>
+              </div>
+              <button type="submit" class="btn">Submit Registration</button>
+          </form>
+      </section>
+
+      <section>
+        <h2> Registered Dog Walkers</h2>
+        <ul id="registeredWalkers" class="list">
+          <li>Name: Sarah, Location: Camden Town, Hourly Rate: £20, Email: sarah@email.com, Phone: 07123456789</li>
+          <li>Name: Gemma, Location: Hampstead, Hourly Rate: £18, Email: gemma@email.com, Phone: 07234567890</li>
+          <li>Name: Jaqueline, Location: Belsize Park, Hourly Rate: £17, Email: jaqueline@email.com, Phone: 07345678901</li>
+          <li>Name: Alma, Location: Primrose Hill, Hourly Rate: £16, Email: alma@email.com, Phone: 07456789012</li>
+          <li>Name: Denize, Location: Gospel Oak, Hourly Rate: £15, Email: denize@email.com, Phone: 07567890123</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2> Registered Dogs</h2>
+        <ul id="registeredDogs" class="list">
+          <li>Dog Name: Bailey, Breed: Whippet, Owner Location: Islington, Owner Email: pacha@email.com, Owner Phone: 07678901234</li>
+          <li>Dog Name: Cooper, Breed: Lab, Owner Location: Hackney, Owner Email: cassie@email.com, Owner Phone: 07789012345</li>
+          <li>Dog Name: Lola, Breed: Poodle, Owner Location: Shoreditch, Owner Email: aneirin@email.com, Owner Phone: 07890123456</li>
+          <li>Dog Name: Toby, Breed: Italian Greyhound, Owner Location: Notting Hill, Owner Email: younis@email.com, Owner Phone: 07901234567</li>
+          <li>Dog Name: Rosie, Breed: Afghan Hound, Owner Location: Soho, Owner Email: maryam@email.com, Owner Phone: 07012345678</li>
+        </ul>
+      </section>
+      </main>
+
+      <footer>
+        <p>BS3928 - Cloud Computing and Infrastructure</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

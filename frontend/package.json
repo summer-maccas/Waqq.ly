@@ -1,0 +1,9 @@
+{
+  "name": "waqq.ly",
+  "version": "1.0.0",
+  "description": "A Cloud-Based Web App that helps dog owners identify dog walkers within their area",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve"
+  }
+}
